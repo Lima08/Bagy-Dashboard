@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import ChartDashboard from './components/chartDashboard';
+import { client } from './config/client-graphql';
+import { gql } from '@apollo/client';
 
 function App() {
+  function initial() {
+    client
+      .query({
+        query: gql`
+          {
+            me {
+              name
+              id
+            }
+          }
+        `,
+        variables: { myVariable: 'someValue' },
+      })
+      .then((res) => console.log('A resposta é --->', res.data.me));
+  }
+
+  useEffect(() => {
+    initial();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ChartDashboard />
     </div>
   );
 }
