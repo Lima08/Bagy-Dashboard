@@ -9,7 +9,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      'x-auth-token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdG9yZUlkIjoiMTA2Iiwicm9sZSI6MX0.F34VFBqz2HEr-2aUOxXBu5NCRc31fkudXUkOqfrjNdM',
+      'x-auth-token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdG9yZUlkIjoiMTAzIiwicm9sZSI6MX0.A9U6DQ_clavUnbiriUMjV1Lk7CTXL_uHBPi0NCL5-4c',
     },
   };
 });
