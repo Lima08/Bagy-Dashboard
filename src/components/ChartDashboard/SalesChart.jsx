@@ -2,21 +2,25 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 
 function SalesChart() {
-
   const options = {
     scales: {
       y: {
         display: true,
         position: 'right',
         grid: {
-          drawOnChartArea: false,
-        }
-      }
-    }
+          drawOnChartArea: true,
+        },
+      },
+      x: {
+        display: false,
+        grid: {
+          drawOnChartArea: true,
+        },
+      },
+    },
   };
 
   const data = {
-    
     // o ponto no grafico com o valor vai ser o dia
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // Aqui vai ser todos os meses
     datasets: [
@@ -28,6 +32,7 @@ function SalesChart() {
         backgroundColor: 'rgba(252,60,141,0.1)',
         borderColor: 'rgba(252,60,141)',
         yAxisID: 'y',
+        xAxisID: 'x',
       },
       {
         label: 'Mês passado',

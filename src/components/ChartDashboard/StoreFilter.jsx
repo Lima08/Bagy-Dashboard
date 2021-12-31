@@ -23,7 +23,7 @@ function StoreFilter() {
   }, [store])
 
   return (
-    <label htmlFor='store' className='dropdown'>
+    <label htmlFor='store' className='dropdown filter'>
       Lojas
       <select
         onChange={({ target }) => changeStoreData(target.value)}

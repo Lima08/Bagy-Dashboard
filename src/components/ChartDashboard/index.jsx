@@ -7,11 +7,9 @@ import YearFilter from './YearFilter';
 function ChartDashboard() {
   return (
     <section className='chart-dashboard'>
-      <div className='chart'>
         <SalesChart />
-      </div>
 
-      <aside className='filters'>
+      <aside className='container-filter'>
         <StoreFilter />
         <MonthFilter />
         <YearFilter />

@@ -22,7 +22,7 @@ function YearFilter() {
   }
 
   return (
-    <label htmlFor='year' className='dropdown'>
+    <label htmlFor='year' className='dropdown filter'>
       Ano
       <select
         onChange={({ target }) => changeYearData(target.value)}

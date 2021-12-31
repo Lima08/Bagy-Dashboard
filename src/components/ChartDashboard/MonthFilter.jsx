@@ -32,7 +32,7 @@ function MonthFilter() {
   }
 
   return (
-    <label htmlFor='month' className='dropdown'>
+    <label htmlFor='month' className='dropdown filter'>
       Mês
       <select
         onChange={({ target }) => changeMonthData(target.value)}
