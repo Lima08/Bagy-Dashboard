@@ -9,6 +9,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-color: rgb(249, 250, 249);
   /* flex-direction: row; */
 
 }
@@ -16,8 +17,6 @@
 .navbar {
   background-color: rgb(12, 61, 197);
   width: 20vw;
-  padding: 0 auto;
-  text-align: center;
 }
 
 .dashboard {
@@ -35,7 +34,6 @@
 }
 
 .chart-dashboard {
-  background-color: greenyellow;
   display: flex;
   height: 70vh;
 

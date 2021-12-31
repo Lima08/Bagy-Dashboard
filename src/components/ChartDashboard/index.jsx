@@ -1,4 +1,5 @@
 import React from 'react';
+import StoreFilter from './StoreFilter'
 // import query from '../../graphql';
 // import { useQuery } from '@apollo/client';
 
@@ -12,7 +13,7 @@ function ChartDashboard() {
       </div>
 
       <aside className='filters'>
-        <h1>Filtros </h1>
+       <StoreFilter />
       </aside>
     </section>
   );
