@@ -15,11 +15,9 @@ export const GET_STORE_INFO = gql`
       consolidatedOrderId
       price
       createdAt
-      paymentMethod
       products {
         productName
         productCode
-        firstPictureUrl
         unitPrice
         quantity
       }

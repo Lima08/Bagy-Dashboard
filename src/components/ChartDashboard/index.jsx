@@ -1,6 +1,6 @@
 import React from 'react';
 import MonthFilter from './MonthFilter';
-import SalesChart from './SalesChart';
+import SalesChart from './salesChart';
 import StoreFilter from './StoreFilter';
 import YearFilter from './YearFilter';
 
