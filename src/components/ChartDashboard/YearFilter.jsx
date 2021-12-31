@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStoresContext } from '../../context/StoresContext';
-// import { useStoresContext } from '../../context/StoresContext';
 
 function YearFilter() {
   const YEARS = [
