@@ -23,7 +23,8 @@ function StoreFilter() {
   }, [store])
 
   return (
-    <div className='dropdown'>
+    <label htmlFor='store' className='dropdown'>
+      Lojas
       <select
         onChange={({ target }) => changeStoreData(target.value)}
         className='btn btn-light dropdown-toggle'
@@ -32,7 +33,7 @@ function StoreFilter() {
       >
         {storesOptions.map((store, index) => storeOptionsMakers(store, index))}
       </select>
-    </div>
+    </label>
   );
 }
 
