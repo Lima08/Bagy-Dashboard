@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-const GET_ME = gql`
+export const GET_ME = gql`
   query {
     me {
       name
@@ -9,7 +9,7 @@ const GET_ME = gql`
   }
 `;
 
-const GET_STORE_INFO = gql`
+export const GET_STORE_INFO = gql`
   query {
     getConsolidatedOrders {
       consolidatedOrderId
@@ -26,10 +26,3 @@ const GET_STORE_INFO = gql`
     }
   }
 `;
-
-const queries = {
-  GET_STORE_INFO,
-  GET_ME,
-};
-
-export default queries;

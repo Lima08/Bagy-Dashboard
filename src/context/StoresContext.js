@@ -11,7 +11,7 @@ export default function StoresContextProvider({ children }) {
     const storeInfos = async () => {
       const store = await getStoresInfos(selectedStore);
 
-      setStore(store.data.getConsolidatedOrders);
+      setStore(store.data);
     };
     storeInfos();
   }, [selectedStore]);

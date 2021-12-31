@@ -1,29 +1,9 @@
-import {
-  ApolloClient,
-  createHttpLink,
-  InMemoryCache,
-  gql,
-} from '@apollo/client';
+import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import STORES from '../assets/stores';
+import { GET_STORE_INFO } from '../graphql/queries';
 
 const storesOptions = Object.entries(STORES);
-
-const GET_ME = gql`
-  query {
-    getConsolidatedOrders {
-      consolidatedOrderId
-      price
-      createdAt
-      products {
-        productName
-        productCode
-        unitPrice
-        quantity
-      }
-    }
-  }
-`;
 
 const httpLink = createHttpLink({
   uri: 'https://staging-dot-bagy-api.appspot.com/graphql',
@@ -50,7 +30,7 @@ function client(store) {
 export function getStoresInfos(store) {
   return client(store)
     .query({
-      query: GET_ME,
+      query: GET_STORE_INFO,
     })
     .then((res) => res);
 }
