@@ -1,19 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import STORES from '../../assets/stores';
+import { useStoresContext } from '../../context/StoresContext';
 
 function StoreFilter() {
+  const storesOptions = Object.entries(STORES);
+  const { store, setSelectedStore } = useStoresContext();
+
+  function storeOptionsMakers(store, index) {
+    return (
+      <option key={index} value={index}>
+        {store[0]}
+      </option>
+    );
+  }
+
+  function changeStoreData(storeIndex) {
+    setSelectedStore(storeIndex);
+  }
+
+  useEffect(() => {
+    console.log('O resultado de store é ==>', store)
+  }, [store])
+
   return (
     <div className='dropdown'>
-      <label for='store'>
-        <select
-          className='btn btn-secondary dropdown-toggle'
-          name='store'
-          id='store'
-        >
-          <option value='volvo'>Volvo</option>
-          <option value='teste'>teste</option>
-          <option value='Pri'>Pri loja</option>
-        </select>
-      </label>
+      <select
+        onChange={({ target }) => changeStoreData(target.value)}
+        className='btn btn-light dropdown-toggle'
+        name='store'
+        id='store'
+      >
+        {storesOptions.map((store, index) => storeOptionsMakers(store, index))}
+      </select>
     </div>
   );
 }
