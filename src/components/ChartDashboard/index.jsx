@@ -1,6 +1,7 @@
 import React from 'react';
 import MonthFilter from './MonthFilter';
 import StoreFilter from './StoreFilter';
+import YearFilter from './YearFilter';
 
 function ChartDashboard() {
   return (
@@ -12,6 +13,7 @@ function ChartDashboard() {
       <aside className='filters'>
         <StoreFilter />
         <MonthFilter />
+        <YearFilter />
       </aside>
     </section>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useStoresContext } from '../../context/StoresContext';
 // import { useStoresContext } from '../../context/StoresContext';
 
@@ -17,7 +17,8 @@ function MonthFilter() {
     'novembro',
     'dezembro',
   ];
-  const { setMonth } = useStoresContext()
+
+  const { setMonth } = useStoresContext();
 
   function monthOptionsMakers(month, index) {
     return (
@@ -27,13 +28,9 @@ function MonthFilter() {
     );
   }
 
-  function changeMonthData(month) {
-    setMonth(month);
+  function changeMonthData(monthSelected) {
+    setMonth(monthSelected);
   }
-
-  // useEffect(() => {
-  //   console.log('O resultado de store é ==>', store);
-  // }, [store]);
 
   return (
     <label htmlFor='month' className='dropdown'>

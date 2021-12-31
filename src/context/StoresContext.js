@@ -7,6 +7,7 @@ export default function StoresContextProvider({ children }) {
   const [selectedStore, setSelectedStore] = useState(0);
   const [store, setStore] = useState({});
   const [month, setMonth] = useState('janeiro');
+  const [year, setYear] = useState('2010');
 
   useEffect(() => {
     const storeInfos = async () => {
@@ -21,7 +22,9 @@ export default function StoresContextProvider({ children }) {
     store: store ? store : {},
     setSelectedStore,
     month,
-    setMonth
+    setMonth,
+    year,
+    setYear,
   };
 
   return (
