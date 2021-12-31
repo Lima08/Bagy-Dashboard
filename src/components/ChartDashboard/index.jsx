@@ -1,13 +1,8 @@
 import React from 'react';
-// import { useStoresContext } from '../../context/StoresContext';
-import StoreFilter from './StoreFilter'
-// import query from '../../graphql';
-// import { useQuery } from '@apollo/client';
+import MonthFilter from './MonthFilter';
+import StoreFilter from './StoreFilter';
 
 function ChartDashboard() {
-  // const { store, setSelectdStore } = useStoresContext
-
-
   return (
     <section className='chart-dashboard'>
       <div className='chart'>
@@ -15,7 +10,8 @@ function ChartDashboard() {
       </div>
 
       <aside className='filters'>
-       <StoreFilter />
+        <StoreFilter />
+        <MonthFilter />
       </aside>
     </section>
   );
