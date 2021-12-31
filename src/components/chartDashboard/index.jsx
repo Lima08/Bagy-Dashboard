@@ -7,7 +7,20 @@ function ChartDashboard() {
 
   return (
     <>
-      <h1> ChartDashboard</h1>
+      <div className='header'>
+        <h1>Header</h1>
+      </div>
+      <div className='panel'>
+        <h1>Panel</h1>
+      </div>
+
+      <div className='chart'>
+        <h1> ChartDashboard</h1>
+      </div>
+
+      <div className='section'>
+        <h1>section</h1>
+      </div>
     </>
   );
 }
