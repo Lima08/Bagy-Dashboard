@@ -1,11 +1,12 @@
 import React from 'react';
 import './style/app.css';
-import ChartDashboard from './components/chartDashboard';
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
-    <>
-      <div className='navbar'>
+    <div className='app'>
+      <nav className='navbar'>
+        {/*  Componentizar */}
         <ul>
           <li>Visão Geral</li>
           <li>Lojas</li>
@@ -16,10 +17,10 @@ function App() {
           <li>Configurações</li>
           <li>Sair</li>
         </ul>
-      </div>
+      </nav>
 
-      <ChartDashboard />
-    </>
+      <Dashboard />
+    </div>
   );
 }
 

@@ -6,22 +6,15 @@ function ChartDashboard() {
   // const { loading, error, data } = useQuery(query.queryTest3);
 
   return (
-    <>
-      <div className='header'>
-        <h1>Header</h1>
-      </div>
-      <div className='panel'>
-        <h1>Panel</h1>
-      </div>
-
+    <section className='chart-dashboard'>
       <div className='chart'>
-        <h1> ChartDashboard</h1>
+        <h1> Chart</h1>
       </div>
 
-      <div className='section'>
-        <h1>section</h1>
-      </div>
-    </>
+      <aside className='filters'>
+        <h1>Filtros </h1>
+      </aside>
+    </section>
   );
 }
 

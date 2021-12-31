@@ -5,22 +5,53 @@
   box-sizing: border-box;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: row; */
+
+}
+
 .navbar {
   background-color: rgb(12, 61, 197);
+  width: 20vw;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.dashboard {
+  width: 80vw;
 }
 
 .header {
   background-color: rgb(197, 39, 12);
-}
-
-.section {
-  background-color: rgb(71, 83, 255);
+  height: 8vh;
 }
 
 .panel {
   background-color: rgb(114, 104, 102);
+  height: 22vh;
+}
+
+.chart-dashboard {
+  background-color: greenyellow;
+  display: flex;
+  height: 70vh;
+
 }
 
 .chart {
-  background-color: tomato;
+  background-color: rgb(219, 218, 217);
+  width: 80%;
+}
+
+.filters {
+  /* background-color: green; */
+  width: 20%;
+
+}
+
+.section {
+  background-color: rgb(71, 83, 255);
 }
