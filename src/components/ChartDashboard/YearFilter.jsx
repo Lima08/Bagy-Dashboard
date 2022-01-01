@@ -6,7 +6,7 @@ function YearFilter() {
     2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,
   ];
 
-  const { setYear, year } = useStoresContext();
+  const { setYear } = useStoresContext();
 
   function yearOptionsMakers(year, index) {
     return (
@@ -17,7 +17,6 @@ function YearFilter() {
   }
 
   function changeYearData(yearSelected) {
-    console.log(year)
     setYear(yearSelected);
   }
 

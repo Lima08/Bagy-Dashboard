@@ -3,14 +3,6 @@ import { Line } from 'react-chartjs-2';
 
 function SalesChart() {
   const options = {
-    // plugins: {
-    //   legend: {
-    //     display: true,
-    //     labels: {
-    //       color: 'rgb(255, 99, 132)',
-    //     },
-    //   },
-    // },
     scales: {
       y: {
         display: true,
@@ -33,7 +25,7 @@ function SalesChart() {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // Aqui vai ser todos os meses
     datasets: [
       {
-        label: 'Este mês',
+        label: false,
         data: [33, 53, 85, 41, 44, 65], // valor total de vendas de cada mês
         fill: true,
         lineTension: 0.5,
@@ -43,8 +35,14 @@ function SalesChart() {
         xAxisID: 'x',
       },
       {
+        label: 'Este mês',
+        data: [null, null, 71, null, null, null ], // valor total de vendas do mes do filtro
+        borderColor: 'rgba(352,30,141)',
+        borderWidth: 10,
+      },
+      {
         label: 'Mês passado',
-        data: [null, null, null, 71, null, null ], // valor total de vendas de cada mês
+        data: [null, null, null, 71, null, null ], // valor total de vendas mes anterior ao filtro
         borderColor: 'rgba(152,30,141)',
         borderWidth: 10,
       },

@@ -2,6 +2,7 @@ import React from 'react';
 import MonthFilter from './MonthFilter';
 import SalesChart from './salesChart';
 import StoreFilter from './StoreFilter';
+import TotalInvoice from './TotalInvoice';
 import YearFilter from './YearFilter';
 
 function ChartDashboard() {
@@ -13,6 +14,7 @@ function ChartDashboard() {
         <StoreFilter />
         <MonthFilter />
         <YearFilter />
+        <TotalInvoice />
       </aside>
     </section>
   );

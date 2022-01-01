@@ -1,10 +1,10 @@
-import React/* , { useEffect }  */from 'react';
+import React from 'react';
 import STORES from '../../assets/stores';
-// import { useStoresContext } from '../../context/StoresContext';
+import { useStoresContext } from '../../context/StoresContext';
 
 function StoreFilter() {
   const storesOptions = Object.entries(STORES);
-  // const { store, setSelectedStore } = useStoresContext();
+  const { setSelectedStore } = useStoresContext();
 
   function storeOptionsMakers(store, index) {
     return (
@@ -14,15 +14,9 @@ function StoreFilter() {
     );
   }
 
-  //  Descomentar a linah e tirar return
   function changeStoreData(storeIndex) {
-    return;
-    // setSelectedStore(storeIndex);
+    setSelectedStore(storeIndex);
   }
-
-  // useEffect(() => {
-  //   console.log('O resultado de store é ==>', store)
-  // }, [store])
 
   return (
     <label htmlFor='store' className='dropdown filter'>
