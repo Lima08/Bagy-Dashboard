@@ -4,7 +4,8 @@ import { useStoresContext } from '../../context/StoresContext';
 function TotalInvoice() {
   const { totalConsolidatedOrders } = useStoresContext();
 
-  // if (!totalConsolidatedOrders) (<p>Loading...</p>)
+  // if (!totalConsolidatedOrders) return <p>Loading...</p>;
+
   return (
     <div>
       <p>Total faturamento</p>

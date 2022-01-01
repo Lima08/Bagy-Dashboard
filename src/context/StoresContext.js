@@ -8,7 +8,7 @@ const MyContext = React.createContext();
 export default function StoresContextProvider({ children }) {
   const [selectedStore, setSelectedStore] = useState(0);
   const [storeData, setStoreData] = useState([]);
-  const [month, setMonth] = useState(1);
+  const [month, setMonth] = useState('01');
   const [year, setYear] = useState('2020');
   const [totalConsolidatedOrders, setTotalConsolidatedOrders] = useState(0);
 
@@ -24,7 +24,6 @@ export default function StoresContextProvider({ children }) {
   useEffect(() => {
     const totalOrder = filterAndDefineTotalOrder(storeData, month, year);
     setTotalConsolidatedOrders(totalOrder);
-    console.log(totalOrder);
   }, [storeData, month, year]);
 
   const contextValue = {
