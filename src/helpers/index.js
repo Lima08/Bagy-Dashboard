@@ -14,19 +14,18 @@ function filterConsolidatedOrdersByMonth(data, month) {
 }
 
 function filterAndDefineTotalOrder(data, month, year) {
-  console.log('filterAndDefineTotalOrder -->', data);
-
   if (data.length === 0) return 0;
-
+  console.log(data);
   const allYearOrders = filterConsolidatedOrdersByYear(data, year);
+  console.log(allYearOrders);
   const allMonthrders = filterConsolidatedOrdersByMonth(allYearOrders, month);
+  console.log(allMonthrders);
   const totalConsolidatedOrders = allMonthrders.reduce(
     (acc, cur) => cur.price + acc,
     0
   );
 
-  console.log('resultado -->', totalConsolidatedOrders);
-
+  console.log(totalConsolidatedOrders);
   return totalConsolidatedOrders;
 }
 
