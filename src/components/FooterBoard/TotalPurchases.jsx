@@ -12,25 +12,23 @@ export default function TotalPurchases() {
         <button>Semanal</button>
       </div>
 
-      <div className='footer-body'>
-        <ul>
-          <li>
-            <p>Estilo Pri </p>
-            <p>250 compras </p>
-            <p>R$ 4238.00 </p>
-          </li>
-          <li>
-            <p>Estilo Pri2 </p>
-            <p>20 compras </p>
-            <p>R$ 428.00 </p>
-          </li>
-          <li>
-            <p>Estilo </p>
-            <p>25 compras </p>
-            <p>R$ 38.00 </p>
-          </li>
-        </ul>
-      </div>
+      <table className='footer-body'>
+          <tr>
+            <td>Estilo Pri </td>
+            <td>250 compras </td>
+            <td>R$ 4238.00 </td>
+          </tr>
+          <tr>
+            <td>Estilo Pri2 </td>
+            <td>20 compras </td>
+            <td>R$ 428.00 </td>
+          </tr>
+          <tr>
+            <td>Estilo </td>
+            <td>25 compras </td>
+            <td>R$ 38.00 </td>
+          </tr>
+      </table>
     </section>
   );
 }

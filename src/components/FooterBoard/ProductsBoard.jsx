@@ -4,7 +4,7 @@ export default function ProductsBoard() {
   return (
     <section className="footerboard-section">
       <table className="footerboard-table">
-        <tr className='footer-header'>
+        <tr>
           <th>Produtos</th>
           <th>Lojas</th>
           <th>Preço</th>
