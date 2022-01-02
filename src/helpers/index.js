@@ -3,7 +3,6 @@ export function filterConsolidatedOrdersByYear(data, year) {
     return order.createdAt.split('-')[0] === year;
   });
 
-  console.log('allYearOrders', allYearOrders);
   return allYearOrders;
 }
 

@@ -1,21 +1,27 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import OPTIONS from './options';
+import options from './options';
 import data from './chartData';
 import { filterUniqueMonth } from '../../../helpers';
 import mock from '../../../helpers/mock';
 import { useStoresContext } from '../../../context/StoresContext';
 
 function SalesChart() {
-  const { month, totalConsolidatedOrders } = useStoresContext();
+  const { month, year, totalConsolidatedOrders, totalSalesYear } =
+    useStoresContext();
 
   return (
     <div className='chart'>
+      {/*  Arrumar essa bagunça */}
       <Line
-        options={OPTIONS}
-        data={data(filterUniqueMonth(mock), {
-          [month]: totalConsolidatedOrders,
-        })}
+        options={options(month, year)}
+        data={data(
+          filterUniqueMonth(mock),
+          {
+            [month]: totalConsolidatedOrders,
+          },
+          totalSalesYear
+        )}
       />
     </div>
   );

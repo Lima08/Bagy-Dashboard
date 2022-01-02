@@ -1,4 +1,4 @@
-const OPTIONS = {
+const options = (month, year) => ({
   plugins: {
     title: {
       display: true,
@@ -14,7 +14,7 @@ const OPTIONS = {
     },
     subtitle: {
       display: true,
-      text: 'Custom Chart Subtitle',
+      text: `${month} - ${year}`,
       align: 'start',
       padding: {
         top: 10,
@@ -54,9 +54,9 @@ const OPTIONS = {
       },
     },
     x: {
-      display: false,
+      display: true,
     },
   },
-};
+});
 
-export default OPTIONS;
+export default options;
