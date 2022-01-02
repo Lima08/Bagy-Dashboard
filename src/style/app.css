@@ -9,13 +9,8 @@
   display: flex;
 }
 
-.navbar {
-  background-color: rgb(12, 61, 197);
-  width: 20vw;
-}
-
 .dashboard {
-  width: 80vw;
+  width: 85vw;
 }
 
 .chart-dashboard {
@@ -114,4 +109,26 @@
 .user {
   display: flex;
   padding: 10px;
+}
+
+/* ------------------------------------ */
+/* ---------------NavBar--------------------- */
+
+.navbar {
+  background-color: #363740;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.logo {
+  margin: 20px;
+}
+
+.navbar li {
+  margin: 15px;
+  list-style-type: none;
 }
