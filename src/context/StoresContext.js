@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 // import { getStoresInfos } from '../graphql/index';
 import getConsolidatedOrders from '../helpers/mock';
-import filterAndDefineTotalOrder from '../helpers/index';
+import { filterAndDefineTotalOrder } from '../helpers/index';
 
 const MyContext = React.createContext();
 

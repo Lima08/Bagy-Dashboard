@@ -1,28 +1,35 @@
 const DATA = {
-  // o ponto no grafico com o valor vai ser o dia
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // Aqui vai ser todos os meses
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], // Logica para filtrar os meses com vendas do ano selecionado
   datasets: [
     {
-      label: false,
-      data: [33, 53, 85, 41, 44, 65], // valor total de vendas de cada mês
-      fill: true,
-      lineTension: 0.5,
-      backgroundColor: 'rgba(252,60,141,0.1)',
-      borderColor: 'rgba(252,60,141)',
-      yAxisID: 'y',
-      xAxisID: 'x',
-    },
-    {
       label: 'Este mês',
-      data: [null, null, 71, null, null, null ], // valor total de vendas do mes do filtro
-      borderColor: 'rgba(352,30,141)',
-      borderWidth: 10,
+      data: { Mar: 15, Apr: 5 }, // valor total de vendas de cada mês do ano selecionado
+      // data: [{x: 'Jan', y: 20}, {x: 'Mar', y: 10}, {x: 'Jan', y: 110}], // valor total de vendas de cada mês do ano selecionado
+      fill: false,
+      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+      pointRadius: 10, // Tamanho da bolinha
+      borderColor: [
+        // Aqui é as cores das bolinhas
+        'rgba(255, 99, 132, 1)', // Uma molinha
+        'rgba(25, 99, 132, 1)', // Outra bolinha 
+        'green', // Outra bolinha 
+      ],
+      borderWidth: 0,
     },
     {
       label: 'Mês passado',
-      data: [null, null, null, 71, null, null ], // valor total de vendas mes anterior ao filtro
-      borderColor: 'rgba(152,30,141)',
-      borderWidth: 10,
+      data: { Jan: 10, Feb: 20, Mar: 15, Apr: 5, May: 35 }, // valor total de vendas de cada mês do ano selecionado
+      // data: [{x: 'Jan', y: 20}, {x: 'Mar', y: 10}, {x: 'Jan', y: 110}], // valor total de vendas de cada mês do ano selecionado
+      fill: true,
+      lineTension: 0.5,
+      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+      pointRadius: 0, // Anola as outras bolinhas
+      // borderColor: [
+      //   // Aqui é as cores das bolinhas
+      //   'rgba(255, 99, 132, 1)',
+      //   'rgba(25, 99, 132, 1)',
+      // ],
+      borderWidth: 4,
     },
   ],
 };
