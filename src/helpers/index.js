@@ -1,12 +1,27 @@
-function filterConsolidatedOrdersByYear(data, year) {
+export function filterConsolidatedOrdersByYear(data, year) {
   const allYearOrders = data.filter((order) => {
     return order.createdAt.split('-')[0] === year;
   });
 
+  console.log('allYearOrders', allYearOrders);
   return allYearOrders;
 }
 
-function filterConsolidatedOrdersByMonth(data, month) {
+export function filterUniqueMonth(data) {
+  const allMonths = data.map((order) => {
+    return order.createdAt.split('-')[1];
+  });
+
+  //  Funçaõ feita com consulta em: https://appdividend.com/2019/04/11/how-to-get-distinct-values-from-array-in-javascript/
+  const unique = (value, index, self) => {
+    return self.indexOf(value) === index;
+  };
+
+  const uniqueMonths = allMonths.filter(unique).sort((a, b) => a - b);
+  return uniqueMonths;
+}
+
+export function filterConsolidatedOrdersByMonth(data, month) {
   const allMonthOrders = data.filter((order) => {
     return order.createdAt.split('-')[1] === month;
   });

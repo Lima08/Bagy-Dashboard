@@ -1,13 +1,22 @@
 import React from 'react';
-import { Line, Chart} from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import OPTIONS from './options';
-import DATA from './chartData';
+import data from './chartData';
+import { filterUniqueMonth } from '../../../helpers';
+import mock from '../../../helpers/mock';
+import { useStoresContext } from '../../../context/StoresContext';
 
 function SalesChart() {
-  Chart.defaults.font.size = 6;
+  const { month, totalConsolidatedOrders } = useStoresContext();
+
   return (
     <div className='chart'>
-      <Line options={OPTIONS} data={DATA} />
+      <Line
+        options={OPTIONS}
+        data={data(filterUniqueMonth(mock), {
+          [month]: totalConsolidatedOrders,
+        })}
+      />
     </div>
   );
 }
