@@ -8,7 +8,7 @@ function StoreFilter() {
 
   function storeOptionsMakers(store, index) {
     return (
-      <option key={index} value={index}>
+      <option key={index} value={index} className="filter">
         {`Loja do testinho ${index + 1}`}
       </option>
     );
@@ -19,17 +19,19 @@ function StoreFilter() {
   }
 
   return (
-    <label htmlFor='store' className='dropdown filter'>
-      Lojas
-      <select
-        onChange={({ target }) => changeStoreData(target.value)}
-        className='btn btn-light dropdown-toggle'
-        name='store'
-        id='store'
-      >
-        {storesOptions.map((store, index) => storeOptionsMakers(store, index))}
-      </select>
-    </label>
+    <div className="filter">
+      <p>Lojas</p>
+      <label htmlFor='store' className=''>
+        <select
+          onChange={({ target }) => changeStoreData(target.value)}
+          className=' filter-options'
+          name='store'
+          id='store'
+        >
+          {storesOptions.map((store, index) => storeOptionsMakers(store, index))}
+        </select>
+      </label>
+    </div>
   );
 }
 

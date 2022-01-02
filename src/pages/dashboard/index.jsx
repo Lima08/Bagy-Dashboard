@@ -1,24 +1,7 @@
-// import query from '../../graphql';
-// import { useQuery } from '@apollo/client';
-// import { ApolloProvider } from '@apollo/client';
-// import { client } from './graphql/graphqlClient';
-
-// const { loading, error, data } = useQuery(query.queryTest3);
-
-//   <ApolloProvider client={client}>
-//   <ChartDashboard />
-// </ApolloProvider>
-// import query from '../../graphql';
-// import { useQuery } from '@apollo/client';
-
 import React from 'react';
-import ChartDashboard from '../../components/ChartDashboard'
-// import { useStoresContext } from '../../context/StoresContext';
-
+import ChartDashboard from '../../components/ChartDashboard';
 
 function Dashboard() {
-  // const { store, setSelectdStore } = useStoresContext()
-
   return (
     <main className='dashboard'>
       <div className='header'>

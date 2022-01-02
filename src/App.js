@@ -20,11 +20,9 @@ function App() {
         </ul>
       </nav>
 
-      <StoresContextProvider>
         <StoresContextProvider>
           <Dashboard />
         </StoresContextProvider>
-      </StoresContextProvider>
     </div>
   );
 }
