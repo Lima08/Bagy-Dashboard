@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/app.css';
-import Dashboard from './pages/dashboard';
+import Dashboard from './pages/Dashboard';
 import StoresContextProvider from './context/StoresContext';
 
 function App() {
