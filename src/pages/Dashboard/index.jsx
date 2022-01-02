@@ -9,10 +9,6 @@ function Dashboard() {
       <Header />
       <Panel />
       <ChartDashboard />
-
-      <div className='section'>
-        <h1>section</h1>
-      </div>
     </main>
   );
 }
