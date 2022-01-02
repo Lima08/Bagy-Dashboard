@@ -1,14 +1,12 @@
 import React from 'react';
 import ChartDashboard from '../../components/ChartDashboard';
+import Header from '../../components/Header';
 import Panel from '../../components/Panel';
 
 function Dashboard() {
   return (
     <main className='dashboard'>
-      <div className='header'>
-        <h1>Header</h1>
-      </div>
-      
+      <Header />
       <Panel />
       <ChartDashboard />
 
