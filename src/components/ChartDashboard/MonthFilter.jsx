@@ -32,17 +32,22 @@ function MonthFilter() {
   }
 
   return (
-    <label htmlFor='month' className='dropdown filter'>
-      Mês
-      <select
-        onChange={({ target }) => changeMonthData(target.value)}
-        className='btn btn-light dropdown-toggle'
-        name='month'
-        id='month'
-      >
-        {Object.keys(MONTHS).map((month, index) => monthOptionsMakers(month, index))}
-      </select>
-    </label>
+    <div className='filter'>
+      <p>Mês</p>
+
+      <label htmlFor='month' className=''>
+        <select
+          onChange={({ target }) => changeMonthData(target.value)}
+          className=' filter-options'
+          name='month'
+          id='month'
+        >
+          {Object.keys(MONTHS).map((month, index) =>
+            monthOptionsMakers(month, index)
+          )}
+        </select>
+      </label>
+    </div>
   );
 }
 

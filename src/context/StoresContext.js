@@ -45,7 +45,6 @@ export default function StoresContextProvider({ children }) {
       {}
     );
 
-    console.log('iausdhfioashdfuoahsdf', totalSales);
     setTotalSalesYear(totalSales);
   }, [storeData, month, year]);
 

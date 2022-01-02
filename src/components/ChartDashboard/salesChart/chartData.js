@@ -1,5 +1,4 @@
 const data = (axes, monthData, totalSalesYear) => {
-  console.log('totalSalesYear', totalSalesYear)
   return {
     labels: axes,
     datasets: [

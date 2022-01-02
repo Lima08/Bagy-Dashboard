@@ -9,7 +9,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: rgb(249, 250, 249);
+  /* background-color: rgb(249, 250, 249); */
   /* flex-direction: row; */
 }
 
@@ -19,12 +19,12 @@
 }
 
 .dashboard {
-  width: 80vw;
+  width: 100vw;
 }
 
 .header {
   background-color: rgb(197, 39, 12);
-  height: 8vh;
+  height: 5vh;
 }
 
 .panel {
@@ -34,24 +34,43 @@
 
 .chart-dashboard {
   display: flex;
-  height: 70vh;
-  display: flex;
+  margin: 20px;
+  border: solid 1px rgb(159, 162, 180, 0.5);
+  border-radius: 5px;
 }
 
 .chart {
-  width: 100%;
+  width: 80%;
+  padding: 10px;
   font-family: sans-serif;
   text-align: center;
 }
 
-.container-filter {
-  /* background-color: green; */
-  width: 30%;
+.filter-container {
+  width: 20%;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .filter {
   width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px rgb(159, 162, 180, 0.2);
+}
+
+.filter p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #9fa2b4;
+}
+
+.filter-options {
+  color: #252733;
+  font-weight: bolder;
 }
 
 .section {

@@ -28,7 +28,6 @@ const options = (month, year) => ({
       display: true,
       // position: 'bottom',
       fullSize: false,
-      // onClick: ()=> console.log('oii'),
       align: 'end',
       labels: {
         // boxWidth: 220,

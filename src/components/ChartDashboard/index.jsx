@@ -1,4 +1,5 @@
 import React from 'react';
+import Analysis from './analysis';
 import MonthFilter from './MonthFilter';
 import SalesChart from './salesChart';
 import StoreFilter from './StoreFilter';
@@ -10,11 +11,12 @@ function ChartDashboard() {
     <section className='chart-dashboard'>
         <SalesChart />
 
-      <aside className='container-filter'>
+      <aside className='filter-container'>
         <StoreFilter />
         <MonthFilter />
         <YearFilter />
         <TotalInvoice />
+        <Analysis />
       </aside>
     </section>
   );

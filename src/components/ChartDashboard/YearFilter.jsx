@@ -28,23 +28,27 @@ function YearFilter() {
   }
 
   function changeYearData(yearSelected) {
-    console.log('o ano', yearSelected);
     setYear(yearSelected);
   }
 
   return (
-    <label htmlFor='year' className='dropdown filter'>
-      Ano
-      <select
-        onChange={({ target }) => changeYearData(target.value)}
-        className='btn btn-light dropdown-toggle'
-        name='year'
-        id='year'
-        value={year}
-      >
-        {YEARS.map((yearOption, index) => yearOptionsMakers(yearOption, index))}
-      </select>
-    </label>
+    <div className='filter'>
+      <p>Ano</p>
+
+      <label htmlFor='year' className=''>
+        <select
+          onChange={({ target }) => changeYearData(target.value)}
+          className=' filter-options'
+          name='year'
+          id='year'
+          value={year}
+        >
+          {YEARS.map((yearOption, index) =>
+            yearOptionsMakers(yearOption, index)
+          )}
+        </select>
+      </label>
+    </div>
   );
 }
 
