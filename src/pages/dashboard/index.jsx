@@ -13,10 +13,11 @@
 
 import React from 'react';
 import ChartDashboard from '../../components/ChartDashboard'
+// import { useStoresContext } from '../../context/StoresContext';
 
 
 function Dashboard() {
-  // const { loading, error, data } = useQuery(query.queryTest3);
+  // const { store, setSelectdStore } = useStoresContext()
 
   return (
     <main className='dashboard'>

@@ -1,18 +1,20 @@
 import React from 'react';
-// import query from '../../graphql';
-// import { useQuery } from '@apollo/client';
+import MonthFilter from './MonthFilter';
+import SalesChart from './salesChart';
+import StoreFilter from './StoreFilter';
+import TotalInvoice from './TotalInvoice';
+import YearFilter from './YearFilter';
 
 function ChartDashboard() {
-  // const { loading, error, data } = useQuery(query.queryTest3);
-
   return (
     <section className='chart-dashboard'>
-      <div className='chart'>
-        <h1> Chart</h1>
-      </div>
+        <SalesChart />
 
-      <aside className='filters'>
-        <h1>Filtros </h1>
+      <aside className='container-filter'>
+        <StoreFilter />
+        <MonthFilter />
+        <YearFilter />
+        <TotalInvoice />
       </aside>
     </section>
   );

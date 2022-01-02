@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/app.css';
 import Dashboard from './pages/dashboard';
+import StoresContextProvider from './context/StoresContext';
 
 function App() {
   return (
@@ -19,7 +20,11 @@ function App() {
         </ul>
       </nav>
 
-      <Dashboard />
+      <StoresContextProvider>
+        <StoresContextProvider>
+          <Dashboard />
+        </StoresContextProvider>
+      </StoresContextProvider>
     </div>
   );
 }

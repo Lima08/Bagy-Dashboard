@@ -9,15 +9,13 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-color: rgb(249, 250, 249);
   /* flex-direction: row; */
-
 }
 
 .navbar {
   background-color: rgb(12, 61, 197);
   width: 20vw;
-  padding: 0 auto;
-  text-align: center;
 }
 
 .dashboard {
@@ -35,21 +33,25 @@
 }
 
 .chart-dashboard {
-  background-color: greenyellow;
   display: flex;
   height: 70vh;
-
+  display: flex;
 }
 
 .chart {
-  background-color: rgb(219, 218, 217);
-  width: 80%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
 }
 
-.filters {
+.container-filter {
   /* background-color: green; */
-  width: 20%;
+  width: 30%;
+  flex-direction: column;
+}
 
+.filter {
+  width: 100%;
 }
 
 .section {
