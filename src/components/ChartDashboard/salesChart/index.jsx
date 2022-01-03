@@ -12,14 +12,11 @@ function SalesChart() {
 
   return (
     <div className='chart'>
-      {/*  Arrumar essa bagunça */}
       <Line
         options={options(month, year)}
         data={data(
           filterUniqueMonth(mock),
-          {
-            [month]: totalConsolidatedOrders,
-          },
+          { [month]: totalConsolidatedOrders },
           totalSalesYear
         )}
       />
