@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 // import { getStoresInfos } from '../graphql/index';
-import getConsolidatedOrders from '../helpers/mock';
+import mockGetConsolidatedOrders from '../helpers/mock';
+// import STORES from '../assets/stores';
 import {
   filterAndDefineTotalOrder,
   filterConsolidatedOrdersByYear,
@@ -12,14 +13,15 @@ const MyContext = React.createContext();
 export default function StoresContextProvider({ children }) {
   const [selectedStore, setSelectedStore] = useState(0);
   const [storeData, setStoreData] = useState([]);
-  const [month, setMonth] = useState('01');
-  const [year, setYear] = useState('2020');
+  const [month, setMonth] = useState('01'); // Colocar posteriormente o mes atual como padãro
+  const [year, setYear] = useState('2020'); // Colocar posteriormente o ano atual como padrão
   const [totalConsolidatedOrders, setTotalConsolidatedOrders] = useState(0);
   const [totalSalesYear, setTotalSalesYear] = useState({});
 
   useEffect(() => {
     const storeInfos = async () => {
-      setStoreData(getConsolidatedOrders);
+      setStoreData(mockGetConsolidatedOrders);
+      // getStoresInfos() --> Usar essa função apra conexão com o banco passando a store escolhida
     };
     storeInfos();
   }, [selectedStore]);
