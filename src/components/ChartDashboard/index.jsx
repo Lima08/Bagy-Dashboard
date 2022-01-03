@@ -3,7 +3,7 @@ import Analysis from './analysis';
 import MonthFilter from './MonthFilter';
 import SalesChart from './salesChart';
 import StoreFilter from './StoreFilter';
-import TotalInvoice from './TotalInvoice';
+import Revenues from './Revenues';
 import YearFilter from './YearFilter';
 
 function ChartDashboard() {
@@ -15,7 +15,7 @@ function ChartDashboard() {
         <StoreFilter />
         <MonthFilter />
         <YearFilter />
-        <TotalInvoice />
+        <Revenues />
         <Analysis />
       </aside>
     </section>

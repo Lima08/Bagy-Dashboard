@@ -1,15 +1,12 @@
 import React from 'react';
 import AllStores from './AllStores';
+import Revenues from './Revenues';
 
 function Panel() {
   return (
     <div className='panel'>
       <AllStores />
-
-      <div className='panel-card'>
-        <p>Faturamento total</p>
-        <h1>100.000,00</h1>
-      </div>
+      <Revenues />
 
       <div className='panel-card'>
         <p>Loja destaque</p>
