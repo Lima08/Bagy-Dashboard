@@ -1,21 +1,22 @@
 import React from 'react';
+import logo from '../../assets/images/bagylogo.png'
 
 export default function NavBar() {
   return (
     <nav className='navbar'>
-      <div className='logo'>
-        <h2>Dashboard Bagy</h2>
+      <div className='logo-container'>
+        <img src={logo} alt='logo bagy' className='logo'/>
       </div>
 
       <ul>
-        <li>Visão Geral</li>
-        <li>Lojas</li>
-        <li>Vendas</li>
-        <li>Clientes</li>
-        <li>Produtos</li>
-        <li>Planos e Metas</li>
-        <li>Configurações</li>
-        <li>Sair</li>
+        <li className='navbar-option'>Visão Geral</li>
+        <li className='navbar-option'>Lojas</li>
+        <li className='navbar-option'>Vendas</li>
+        <li className='navbar-option'>Clientes</li>
+        <li className='navbar-option'>Produtos</li>
+        <li className='navbar-option'>Planos e Metas</li>
+        <li className='navbar-option'>Configurações</li>
+        <li className='navbar-option'>Sair</li>
       </ul>
     </nav>
   );

@@ -9,7 +9,7 @@ function StoreFilter() {
   function storeOptionsMakers(store, index) {
     return (
       <option key={index} value={index} className="filter">
-        {`Loja do testinho ${index + 1}`}
+        {`Loja testinho ${index + 1}`}
       </option>
     );
   }
