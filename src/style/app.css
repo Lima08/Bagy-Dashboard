@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .app {
@@ -45,10 +46,6 @@
   border: solid 1px rgb(159, 162, 180, 0.2);
 }
 
-.filter :hover {
-  color: violet;
-}
-
 .filter p {
   font-size: 0.8rem;
   color: #9fa2b4;
@@ -88,7 +85,14 @@
   text-align: center;
 }
 
-.panel-card {
+.panel-card p {
+  color: #9fa2b4;
+  font-weight: bolder;
+}
+
+.panel-card:hover p,
+.panel-card:hover h1 {
+  color: rgb(255, 105, 180);
 }
 
 /* ------------------------------------ */
@@ -128,7 +132,6 @@
   margin: 15px;
   list-style-type: none;
 }
-
 
 /* ------------------------------------ */
 /* ----------------Footer Section-------------------- */
@@ -171,8 +174,8 @@
   border-bottom: solid 1px rgb(159, 162, 180, 0.5);
 }
 
-
-.footerboard-section th, td{
+.footerboard-section th,
+td {
   text-align: center;
   width: 100%;
   margin: 10px;
@@ -186,7 +189,6 @@
   border-radius: 10px;
   padding: 5px 10px;
   margin: 5px 10px;
-
 }
 
 .table-data {
@@ -197,7 +199,6 @@
   padding: 5px 10px;
   margin: 5px 10px;
 }
-
 
 .footer-body li {
   display: flex;
