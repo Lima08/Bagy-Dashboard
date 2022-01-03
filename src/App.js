@@ -10,7 +10,7 @@ function App() {
     <div className='app'>
       <NavBar />
       <StoresContextProvider>
-        <div className="">
+        <div className="main-content">
           <Dashboard />
           <FooterBoard />
         </div>

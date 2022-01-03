@@ -6,6 +6,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main-content {
+  padding-left: 12vw;
+}
+
 .app {
   display: flex;
 }
@@ -115,8 +119,10 @@
 /* ---------------NavBar--------------------- */
 
 .navbar {
+  position: fixed;
   background-color: #363740;
-  width: 15vw;
+  width: 12vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
