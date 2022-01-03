@@ -4,11 +4,10 @@ import { useStoresContext } from '../../context/StoresContext';
 function Revenues() {
   const { totalSalesYear } = useStoresContext();
 
-  const totalRevenues = Object.values(totalSalesYear).reduce((acc, cur) => {
-    console.log('cur', cur);
-    console.log('acc', acc);
-    return acc + cur;
-  }, 0);
+  const totalRevenues = Object.values(totalSalesYear).reduce(
+    (acc, cur) => acc + cur,
+    0
+  );
 
   return (
     <div className='panel-card'>
