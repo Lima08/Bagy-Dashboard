@@ -20,7 +20,7 @@ export default function ProductsBoard() {
             <td className='table-data'>17/07/20</td>
           </tr>
           <tr>
-            <td>Sandalifffffffa</td>
+            <td>Sandalia</td>
             <td>Estilo Pri2</td>
             <td className='table-price'>R$ 29.90</td>
             <td className='table-data'>20/05/20</td>

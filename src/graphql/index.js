@@ -1,12 +1,13 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import STORES from '../assets/stores';
 import { GET_STORE_INFO } from '../graphql/queries';
 
-const storesOptions = Object.entries(STORES);
 
 const httpLink = createHttpLink({
   uri: 'https://staging-dot-bagy-api.appspot.com/graphql',
+  fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 const authLink = (store) => {
@@ -21,13 +22,16 @@ const authLink = (store) => {
 };
 
 function client(store) {
+  console.log('client', store[1])
+
   return new ApolloClient({
-    link: authLink(storesOptions[store][1]).concat(httpLink),
+    link: authLink([store][1]).concat(httpLink),
     cache: new InMemoryCache(),
   });
 }
 
-export function getStoresInfos(store) {
+export async function getStoresInfos(store) {
+  console.log('getStoresInfos', store)
   return client(store)
     .query({
       query: GET_STORE_INFO,
