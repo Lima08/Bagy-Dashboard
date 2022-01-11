@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import ProductsBoard from './ProductsBoard';
 import TotalPurchases from './TotalPurchases';
