@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import logo from '../../assets/images/bagylogo.png'
+import logo from '../../assets/images/bagylogo.png';
+import './navBar.css';
 
 export default function NavBar() {
   return (

@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h2 {
+  padding: 20px;
+}
+
+.user {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 20px;
+  color: rgb(105, 103, 103);
+  font-weight: bolder;
+}
+
+.user-img-container {
+  width: 50px;
+}
+
+.user-img {
+  border-radius: 100%;
+  width: 100%;
+}
