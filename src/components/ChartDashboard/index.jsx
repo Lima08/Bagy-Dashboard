@@ -6,6 +6,7 @@ import SalesChart from './salesChart';
 import StoreFilter from './StoreFilter';
 import Revenues from './Revenues';
 import YearFilter from './YearFilter';
+import './chartDashboard.css';
 
 function ChartDashboard() {
   return (
