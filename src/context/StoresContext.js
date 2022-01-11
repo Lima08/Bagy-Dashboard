@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { getStoresInfos } from '../graphql/index';
+// import { getStoresInfos } from '../graphql/index';
 import mockGetConsolidatedOrders from '../helpers/mock';
-import STORES from '../assets/stores';
+// import STORES from '../assets/stores';
+import PropTypes from 'prop-types';
 import {
   filterAndDefineTotalOrder,
   filterConsolidatedOrdersByYear,
@@ -73,3 +74,9 @@ export default function StoresContextProvider({ children }) {
 export function useStoresContext() {
   return useContext(MyContext);
 }
+StoresContextProvider.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
