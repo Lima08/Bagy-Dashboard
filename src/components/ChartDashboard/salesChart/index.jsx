@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import options from './options';
