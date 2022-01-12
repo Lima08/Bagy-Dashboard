@@ -1,14 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import STORES from '../../assets/stores'
 
 function AllStores() {
-const allStores = Object.entries(STORES);
 
   return (
     <div className='panel-card'>
       <p>Total de Lojas</p>
-      <h1>{allStores.length}</h1>
+      <h1>5</h1>
     </div>
   );
 }
