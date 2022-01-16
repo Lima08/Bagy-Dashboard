@@ -1,21 +1,22 @@
 import React, { useContext, useEffect, useState } from 'react';
 // import { getStoresInfos } from '../graphql/index';
-import mockGetConsolidatedOrders from '../utils/mock';
+import mockGetConsolidatedOrders from '../utils/storesDataMock';
 // import STORES from '../assets/stores';
 import PropTypes from 'prop-types';
 import {
   filterAndDefineTotalOrder,
   filterConsolidatedOrdersByYear,
   filterUniqueMonth,
-} from '../utils/index';
+} from '../utils/chartFiltersFunctions';
 
 const MyContext = React.createContext();
 
 export default function StoresContextProvider({ children }) {
+  const [headerPage, setHeaderPage] = useState('Visão Geral');
   const [selectedStore, setSelectedStore] = useState(0);
   const [storeData, setStoreData] = useState([]);
-  const [month, setMonth] = useState('01'); 
-  const [year, setYear] = useState('2020'); 
+  const [month, setMonth] = useState('01');
+  const [year, setYear] = useState('2020');
   const [totalConsolidatedOrders, setTotalConsolidatedOrders] = useState(0);
   const [totalSalesYear, setTotalSalesYear] = useState({});
 
@@ -28,7 +29,7 @@ export default function StoresContextProvider({ children }) {
       // console.log(storeInfos)
       // setStoreData(storeInfos)
     };
-    storeInfos()
+    storeInfos();
   }, [selectedStore]);
 
   useEffect(() => {
@@ -64,6 +65,8 @@ export default function StoresContextProvider({ children }) {
     setYear,
     totalConsolidatedOrders,
     totalSalesYear,
+    headerPage,
+    setHeaderPage,
   };
 
   return (

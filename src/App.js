@@ -9,10 +9,11 @@ import Products from './pages/Products';
 import Goals from './pages/Goals';
 import Settings from './pages/Settings';
 import './style/app.css';
+import StoresContextProvider from './context/StoresContext';
 
 function App() {
   return (
-    <main className='app'>
+    <StoresContextProvider>
       <NavBar />
       <Header />
       <Routes>
@@ -25,7 +26,7 @@ function App() {
         <Route path='/settings' element={<Settings />} />
         <Route path='/' element={<Navigate replace to='/dashboard' />} />
       </Routes>
-    </main>
+    </StoresContextProvider>
   );
 }
 

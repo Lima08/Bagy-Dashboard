@@ -11,8 +11,7 @@ import '../../style/chartDashboard.css';
 function ChartDashboard() {
   return (
     <section className='chart-dashboard'>
-        <SalesChart />
-
+      <SalesChart />
       <aside className='filter-container'>
         <StoreFilter />
         <MonthFilter />

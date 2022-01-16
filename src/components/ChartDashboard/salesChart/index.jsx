@@ -3,8 +3,8 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import options from './options';
 import data from './chartData';
-import { filterUniqueMonth } from '../../../utils';
-import mock from '../../../utils/mock';
+import { filterUniqueMonth } from '../../../utils/chartFiltersFunctions';
+import mock from '../../../utils/storesDataMock';
 import { useStoresContext } from '../../../context/StoresContext';
 
 function SalesChart() {

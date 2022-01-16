@@ -1,23 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { useStoresContext } from '../../context/StoresContext';
+import { YEARS } from '../../utils/dateMock';
 
 function YearFilter() {
-  const YEARS = [
-    '2010',
-    '2011',
-    '2012',
-    '2013',
-    '2014',
-    '2015',
-    '2016',
-    '2017',
-    '2018',
-    '2019',
-    '2020',
-    '2021',
-  ];
-
   const { year, setYear } = useStoresContext();
 
   function yearOptionsMakers(yearOption, index) {
@@ -39,7 +25,7 @@ function YearFilter() {
       <label htmlFor='year' className=''>
         <select
           onChange={({ target }) => changeYearData(target.value)}
-          className=' filter-options'
+          className='filter-options'
           name='year'
           id='year'
           value={year}

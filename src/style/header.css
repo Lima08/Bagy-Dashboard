@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  margin-left: 12vw;
   justify-content: space-between;
 }
 
@@ -24,6 +25,6 @@
 }
 
 .user-img {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 100%;
 }

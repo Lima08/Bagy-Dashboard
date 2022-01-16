@@ -2,18 +2,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/bagylogo.png';
+import { useStoresContext } from '../../context/StoresContext';
 import '../../style/navBar.css';
 import NAV_PATHS from './navPaths';
 
 export default function NavBar() {
+  const { setHeaderPage } = useStoresContext();
   const navLinksMapping = NAV_PATHS.map(({ option, path, icon }, index) => {
     return (
       <NavLink
         to={path}
         key={index}
         className='navbar-option'
+        onClick={ () => setHeaderPage(option)}
         style={({ isActive }) => ({
-          // color: isActive ? '#d9d9d9' : '#d9d9d9',
           textDecoration: 'none',
           color: isActive ? '#fff' : '#545e6f',
         })}
