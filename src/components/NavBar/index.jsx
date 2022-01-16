@@ -8,11 +8,20 @@ import NAV_PATHS from './navPaths';
 export default function NavBar() {
   const navLinksMapping = NAV_PATHS.map(({ option, path, icon }, index) => {
     return (
-      <li key={index}>
-        <NavLink className='navbar-option' to={path}>
+      <NavLink
+        to={path}
+        key={index}
+        className='navbar-option'
+        style={({ isActive }) => ({
+          // color: isActive ? '#d9d9d9' : '#d9d9d9',
+          textDecoration: 'none',
+          color: isActive ? '#fff' : '#545e6f',
+        })}
+      >
+        <li>
           {icon} {option}
-        </NavLink>
-      </li>
+        </li>
+      </NavLink>
     );
   });
 

@@ -16,18 +16,19 @@
   padding: 10%;
 }
 
+.navbar-option {
+  margin: 15px;
+  list-style-type: none;
+  color: #363740;
+}
+
 .navbar-option:hover {
-  background-color: #3a1f2e;
+  background-color: #a00c56;
   box-shadow: 0 4px 8px 0 rgba(0 0 0 / 20%), 0 6px 20px 0 rgba(0 0 0);
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-}
-
-.navbar li {
-  margin: 15px;
-  list-style-type: none;
-  color: #363740;
+  color: #fff;
 }
