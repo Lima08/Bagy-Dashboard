@@ -5,15 +5,3 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.main-content {
-  padding-left: 12vw;
-}
-
-.app {
-  display: flex;
-}
-
-.dashboard {
-  width: 85vw;
-}

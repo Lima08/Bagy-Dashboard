@@ -7,7 +7,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: start;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 50%);
 }
 
 .logo {
@@ -18,7 +18,7 @@
 
 .navbar-option:hover {
   background-color: #3a1f2e;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 8px 0 rgba(0 0 0 / 20%), 0 6px 20px 0 rgba(0 0 0);
   height: 10%;
   display: flex;
   justify-content: center;

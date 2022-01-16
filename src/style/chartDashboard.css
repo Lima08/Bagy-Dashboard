@@ -1,7 +1,7 @@
 .chart-dashboard {
   display: flex;
   margin: 0 10px;
-  border: solid 1px rgb(159, 162, 180, 0.5);
+  border: solid 1px rgb(159 162 180 / 50%);
   border-radius: 5px;
 }
 
@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  border: solid 1px rgb(159, 162, 180, 0.2);
+  border: solid 1px rgb(159 162 180/  20%);
 }
 
 .filter p {
