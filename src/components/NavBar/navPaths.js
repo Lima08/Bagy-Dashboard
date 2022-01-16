@@ -14,7 +14,7 @@ const NAV_PATHS = [
   { option: 'Clientes', path: 'clients', icon: <PeopleOutlinedIcon /> },
   { option: 'Produtos', path: 'products', icon: <PersonOutlineOutlinedIcon /> },
   { option: 'Planos e Metas', path: 'goals', icon: <ListAltOutlinedIcon /> },
-  { option: 'Configurações', path: 'configs', icon: <SettingsOutlinedIcon /> },
+  { option: 'Configurações', path: 'settings', icon: <SettingsOutlinedIcon /> },
   { option: 'Sair', path: '/', icon: <ExitToAppIcon /> },
 ];
 
