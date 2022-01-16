@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 // import { getStoresInfos } from '../graphql/index';
-import mockGetConsolidatedOrders from '../helpers/mock';
+import mockGetConsolidatedOrders from '../utils/mock';
 // import STORES from '../assets/stores';
 import PropTypes from 'prop-types';
 import {
   filterAndDefineTotalOrder,
   filterConsolidatedOrdersByYear,
   filterUniqueMonth,
-} from '../helpers/index';
+} from '../utils/index';
 
 const MyContext = React.createContext();
 

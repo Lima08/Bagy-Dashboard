@@ -2,7 +2,7 @@
 import React from 'react';
 import ProductsBoard from './ProductsBoard';
 import TotalPurchases from './TotalPurchases';
-import './footerBoard.css';
+import '../../style/footerBoard.css';
 
 export default function FooterBoard() {
   return (

@@ -4,7 +4,7 @@ import AllStores from './AllStores';
 import BestStore from './BestStore';
 import MonthlyGoal from './MonthlyGoal';
 import Revenues from './Revenues';
-import './panel.css' 
+import '../../style/panel.css' 
 
 function Panel() {
   return (
