@@ -14,7 +14,7 @@ export default function NavBar() {
         to={path}
         key={index}
         className='navbar-option'
-        onClick={ () => setHeaderPage(option)}
+        onClick={() => setHeaderPage(option)}
         style={({ isActive }) => ({
           textDecoration: 'none',
           color: isActive ? '#fff' : '#545e6f',

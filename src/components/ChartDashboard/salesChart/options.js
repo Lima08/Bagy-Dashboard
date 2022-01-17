@@ -3,13 +3,13 @@ const options = (month, year) => ({
     title: {
       display: true,
       align: 'start',
-      color: 'rgb(82, 82, 82)', // cor texto legenda
+      color: 'rgb(82, 82, 82)',
       text: 'Total faturamento mensal',
       padding: {
         top: 10,
       },
       font: {
-        size: 34, // Da legenda
+        size: 34,
       },
     },
     subtitle: {
@@ -26,15 +26,13 @@ const options = (month, year) => ({
 
     legend: {
       display: true,
-      // position: 'bottom',
       fullSize: false,
       align: 'end',
       labels: {
-        // boxWidth: 220,
         boxHeight: 0,
-        color: 'rgb(150, 150, 150)', // cor texto legenda
+        color: 'rgb(150, 150, 150)',
         font: {
-          size: 14, // Da legenda
+          size: 14,
         },
       },
     },

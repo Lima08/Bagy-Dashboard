@@ -14,23 +14,23 @@ export default function TotalPurchases() {
       </div>
 
       <table className='footer-body'>
-          <tbody>
-            <tr>
-              <td>Estilo Pri </td>
-              <td>250 compras </td>
-              <td>R$ 4238.00 </td>
-            </tr>
-            <tr>
-              <td>Estilo Pri2 </td>
-              <td>20 compras </td>
-              <td>R$ 428.00 </td>
-            </tr>
-            <tr>
-              <td>Estilo </td>
-              <td>25 compras </td>
-              <td>R$ 38.00 </td>
-            </tr>
-          </tbody>
+        <tbody>
+          <tr>
+            <td>Estilo Pri </td>
+            <td>250 compras </td>
+            <td>R$ 4238.00 </td>
+          </tr>
+          <tr>
+            <td>Estilo Pri2 </td>
+            <td>20 compras </td>
+            <td>R$ 428.00 </td>
+          </tr>
+          <tr>
+            <td>Estilo </td>
+            <td>25 compras </td>
+            <td>R$ 38.00 </td>
+          </tr>
+        </tbody>
       </table>
     </section>
   );

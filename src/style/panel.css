@@ -14,7 +14,7 @@
   justify-content: center;
   height: 70%;
   margin: 0 auto;
-  border: solid 1px rgb(159, 162, 180, 0.5);
+  border: solid 1px rgb(159 162 180 / 50%);
   border-radius: 5px;
   text-align: center;
 }
@@ -26,5 +26,5 @@
 
 .panel-card:hover p,
 .panel-card:hover h1 {
-  color: rgb(255, 105, 180);
+  color: rgb(255 105 180);
 }

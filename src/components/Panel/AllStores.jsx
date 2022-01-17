@@ -2,7 +2,6 @@
 import React from 'react';
 
 function AllStores() {
-
   return (
     <div className='panel-card'>
       <p>Total de Lojas</p>

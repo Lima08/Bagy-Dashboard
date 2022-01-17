@@ -1,4 +1,4 @@
-import { DAYS } from '../../../utils/dateMock'
+import { DAYS } from '../../../utils/dateMock';
 
 const data = (valuePerDay) => {
   return {
@@ -15,7 +15,7 @@ const data = (valuePerDay) => {
       },
       {
         label: 'Mês anterior ',
-        data: [100,13,458,140,523,255,356],
+        data: [100, 13, 458, 140, 523, 255, 356],
         fill: false,
         lineTension: 0.5,
         backgroundColor: ['rgba(215, 929, 132)'],
