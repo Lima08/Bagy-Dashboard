@@ -11,7 +11,6 @@ export function filterUniqueMonth(data) {
     return order.createdAt.split('-')[1];
   });
 
-  //  Funçaõ feita com consulta em: https://appdividend.com/2019/04/11/how-to-get-distinct-values-from-array-in-javascript/
   const unique = (value, index, self) => {
     return self.indexOf(value) === index;
   };
@@ -39,3 +38,4 @@ export function filterAndDefineTotalOrder(data, month, year) {
 
   return totalConsolidatedOrders;
 }
+
