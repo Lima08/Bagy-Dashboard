@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function ProductsBoard() {
   return (
-    <section className="footerboard-section">
-      <table className="footerboard-table">
+    <section className='footerboard-section'>
+      <table className='footerboard-table'>
         <thead>
           <tr>
             <th>Produtos</th>

@@ -8,7 +8,7 @@ function TotalInvoice() {
   if (!totalConsolidatedOrders) return <p>Loading...</p>;
 
   return (
-    <div className="filter">
+    <div className='filter'>
       <p>Total faturamento</p>
       <h1>{totalConsolidatedOrders}</h1>
     </div>

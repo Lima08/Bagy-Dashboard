@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-// import { getStoresInfos } from '../graphql/index';
 import mockGetConsolidatedOrders from '../utils/storesDataMock';
-// import STORES from '../assets/stores';
 import PropTypes from 'prop-types';
 import {
   filterAndDefineTotalOrder,

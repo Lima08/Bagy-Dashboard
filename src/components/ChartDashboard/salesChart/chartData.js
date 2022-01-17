@@ -4,20 +4,20 @@ const data = (axes, monthData, totalSalesYear) => {
     datasets: [
       {
         label: 'Mês atual',
-        data: monthData, // Mes selecionado
+        data: monthData,
         fill: true,
         lineTension: 0.5,
         backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-        pointRadius: 10, // Anola as outras bolinhas
+        pointRadius: 10,
         borderWidth: 4,
       },
       {
         label: 'ano ',
-        data: totalSalesYear, // Todos os meses e totais de vendas
+        data: totalSalesYear,
         fill: true,
         lineTension: 0.5,
         backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-        pointRadius: 0, // Anola as outras bolinhas
+        pointRadius: 0,
         borderWidth: 4,
       },
     ],
