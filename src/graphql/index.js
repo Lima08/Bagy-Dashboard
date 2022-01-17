@@ -26,7 +26,6 @@ export async function getStoresInfos() {
   return client
     .query({ query: GET_STORE_INFO })
     .then((res) => {
-      console.log(res);
       return res;
     })
     .catch((error) => console.log('--->', error));

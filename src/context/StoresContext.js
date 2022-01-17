@@ -23,11 +23,6 @@ export default function StoresContextProvider({ children }) {
   useEffect(() => {
     const storeInfos = async () => {
       setStoreData(mockGetConsolidatedOrders);
-      // const store = Object.entries(STORES)[1];
-      // console.log(store)
-      // const storeInfos = await getStoresInfos(store);
-      // console.log(storeInfos)
-      // setStoreData(storeInfos)
     };
     storeInfos();
   }, [selectedStore]);
