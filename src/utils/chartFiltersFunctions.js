@@ -71,7 +71,7 @@ export function totalOrderPerDay(days, OrderMonth) {
     }
 
     acc[Object.keys(cur)[0]] = 0;
-      return acc;
+    return acc;
   }, {});
 
   return totalOrderPerDay;
@@ -81,8 +81,7 @@ export function chartValuesMaker(days, data, year, month) {
   const allOrderYear = filterOrdersByYear(data, year);
   const allOrdersMonth = filterOrdersByMonth(allOrderYear, month);
   const dataOrderValuesPerDay = totalOrderPerDay(days, allOrdersMonth);
-  const onlyValues = Object.values(dataOrderValuesPerDay)
-  console.log(dataOrderValuesPerDay)
+  const onlyValues = Object.values(dataOrderValuesPerDay);
 
   return onlyValues;
 }
