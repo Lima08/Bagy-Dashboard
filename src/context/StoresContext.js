@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import mockGetConsolidatedOrders from '../utils/storesDataMock';
-import { DAYS } from '../utils/dateMock'
-import { chartValuesMaker } from '../utils/chartOrdersFunctions';
+import { DAYS } from '../utils/dateMock';
 import PropTypes from 'prop-types';
 import {
   filterAndDefineTotalOrder,
-  filterConsolidatedOrdersByYear,
+  filterOrdersByYear,
   filterUniqueMonth,
+  chartValuesMaker,
 } from '../utils/chartFiltersFunctions';
 
 const MyContext = React.createContext();
@@ -20,15 +20,23 @@ export default function StoresContextProvider({ children }) {
   const [totalSalesYear, setTotalSalesYear] = useState({});
 
   useEffect(() => {
-    const totalOrder = filterAndDefineTotalOrder(mockGetConsolidatedOrders, month, year);
+    const totalOrder = filterAndDefineTotalOrder(
+      mockGetConsolidatedOrders,
+      month,
+      year
+    );
     setTotalConsolidatedOrders(totalOrder);
-    const chartValues = chartValuesMaker(DAYS, mockGetConsolidatedOrders, year, month);
-    setValuePerDay(chartValues)
-
-  }, [ month, year]);
+    const chartValues = chartValuesMaker(
+      DAYS,
+      mockGetConsolidatedOrders,
+      year,
+      month
+    );
+    setValuePerDay(chartValues);
+  }, [month, year]);
 
   useEffect(() => {
-    const totalYearOrder = filterConsolidatedOrdersByYear(mockGetConsolidatedOrders, year);
+    const totalYearOrder = filterOrdersByYear(mockGetConsolidatedOrders, year);
     const allMonthOrder = filterUniqueMonth(totalYearOrder);
 
     const totalSales = allMonthOrder.reduce(
@@ -43,7 +51,7 @@ export default function StoresContextProvider({ children }) {
       {}
     );
     setTotalSalesYear(totalSales);
-  }, [ month, year]);
+  }, [month, year]);
 
   const contextValue = {
     valuePerDay,
